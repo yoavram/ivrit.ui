@@ -1,0 +1,8 @@
+{
+  "name": "ivrit-ui",
+  "description": "Transcribe Hebrew (and English) audio files locally with ivrit.ai / faster-whisper",
+  "version": "1.0.0",
+  "author": {
+    "name": "Yoav Ram"
+  }
+}

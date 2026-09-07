@@ -1,0 +1,13 @@
+# pixi environments
+.pixi/*
+!.pixi/config.toml
+
+# OS cruft
+.DS_Store
+
+# local transcripts/audio - never commit real recordings or transcripts
+*.txt
+*.mp3
+*.wav
+*.m4a
+*.qta

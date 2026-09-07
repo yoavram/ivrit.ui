@@ -1,0 +1,15 @@
+[workspace]
+authors = ["Yoav Ram <yoav@yoavram.com>"]
+channels = ["conda-forge"]
+name = "ivrit-ui"
+platforms = ["osx-arm64", "linux-64", "win-64"]
+version = "0.1.0"
+
+[tasks]
+
+[dependencies]
+python = "3.13.*"
+
+[pypi-dependencies]
+ivrit = { version = ">=0.1.8, <0.2", extras = ["all"] }
+click = ">=8.3.0, <9"

@@ -61,3 +61,20 @@ pixi run python transcribe.py audio.mp3 --device cpu --model ivrit-ai/whisper-la
 
 1. On Apple Silicon, `transcribe.py` defaults to `cpu` when `--device` is omitted.
 2. Errors are surfaced through CLI output and terminate with a non-zero exit.
+
+## Using as a Claude Code skill
+
+This repo is also a Claude Code plugin/marketplace (`.claude-plugin/`), so Claude
+can drive `transcribe.py` for you directly. To install:
+
+```bash
+/plugin marketplace add yoavram/ivrit.ui
+/plugin install ivrit-ui@ivrit-ui-tools
+```
+
+You'll still need `pixi` installed locally and to run `pixi install --locked`
+once in this repo's checkout — the skill just teaches Claude how to invoke the
+CLI (see `SKILL.md`), it doesn't manage the Python environment for you.
+
+Note: real transcripts and audio files are gitignored on purpose (see
+`SKILL.md`'s Privacy section) — this repo is public.
