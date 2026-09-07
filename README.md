@@ -6,7 +6,7 @@ It supports English transcription, but is primarily aimed at Hebrew workflows, w
 ## Requirements
 
 1. `pixi` (project environment manager)
-2. macOS arm64 is the current pinned platform in `pixi.toml`
+2. Supported platforms (pinned in `pixi.toml`): macOS Apple Silicon (`osx-arm64`), Linux x86_64 (`linux-64`), Windows x86_64 (`win-64`). Intel Mac (`osx-64`) isn't supported — `torchaudio` ships no wheel for that platform on Python 3.13.
 
 ## Setup
 
